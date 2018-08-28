@@ -1,0 +1,6 @@
+numpy
+cikit-learn
+igraph
+plotly
+kepler-mapper
+ipywidgets
