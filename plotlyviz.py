@@ -262,7 +262,7 @@ def plot_layout(title='TDA KMapper', width=700, height=700,
 
 
 def get_node_hist(node_color_distribution, title='Graph Node Distribution',
-                  width=600, height=350, top=60, left=60, bottom=60, right=60,
+                  width=400, height=300, top=60, left=25, bottom=60, right=25,
                   bgcolor='rgb(240,240,240)'):
 
     text = ["{perc}%".format(**locals()) for perc in [d['perc']
@@ -286,8 +286,8 @@ def get_node_hist(node_color_distribution, title='Graph Node Distribution',
     return go.FigureWidget(data=[pl_hist], layout=hist_layout)
 
 
-def get_summary_fig(mapper_summary, width=600, height=900, top=60,
-                    left=60, bottom=60, right=60, bgcolor='rgb(240,240,240)'):
+def get_summary_fig(mapper_summary, width=550, height=300, top=60,
+                    left=0, bottom=60, right=25, bgcolor='rgb(240,240,240)'):
     #Define a d figure that displays the algorithms and sklearn called functions
     text = _text_mapper_summary(mapper_summary)
 
