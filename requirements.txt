@@ -4,3 +4,5 @@ kmapper
 python-igraph
 plotly
 ipywidgets
+matplotlib
+cmocean
